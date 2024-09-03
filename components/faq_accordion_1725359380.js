@@ -2,8 +2,8 @@
   <div>
     <section class="leading-relaxed max-w-screen-xl mt-12 mx-auto px-4 md:px-8 bg-white">
       <div class="space-y-3 text-center">
-        <h1 class="text-4xl text-gray-800 font-semibold pt-10">FAQ_TITLE_PLACEHOLDER_TEXT</h1>
-        <p class="text-gray-600 max-w-lg mx-auto text-lg">FAQ_SUBTITLE_PLACEHOLDER_TEXT</p>
+        <h1 class="text-4xl text-gray-800 font-semibold pt-10">Frequently Asked Questions</h1>
+        <p class="text-gray-600 max-w-lg mx-auto text-lg">Get answers to common queries about our blockchain discovery app</p>
       </div>
       <div class="mt-14 max-w-2xl mx-auto">
         <div v-for="(item, index) in faqs" :key="index" class="space-y-5 mt-5 overflow-hidden border-b border-gray-200 hover:bg-gray-50 cursor-pointer" @click="toggleFaq(index)">
@@ -36,11 +36,11 @@ export default {
     return {
       selectedFaq: null,
       faqs: [
-        { q: "FAQ_PLACEHOLDER_QUESTION_TEXT_1", a: "FAQ_PLACEHOLDER_ANSWER_TEXT_1" },
-        { q: "FAQ_PLACEHOLDER_QUESTION_TEXT_2", a: "FAQ_PLACEHOLDER_ANSWER_TEXT_2" },
-        { q: "FAQ_PLACEHOLDER_QUESTION_TEXT_3", a: "FAQ_PLACEHOLDER_ANSWER_TEXT_3" },
-        { q: "FAQ_PLACEHOLDER_QUESTION_TEXT_4", a: "FAQ_PLACEHOLDER_ANSWER_TEXT_4" },
-        { q: "FAQ_PLACEHOLDER_QUESTION_TEXT_5", a: "FAQ_PLACEHOLDER_ANSWER_TEXT_5" }
+        { q: "What is this blockchain discovery app?", a: "Our app is a cutting-edge tool designed to help users find and explore new blockchain projects, cryptocurrencies, and decentralized applications (dApps) across various networks." },
+        { q: "How does the app find new blockchain information?", a: "We use advanced algorithms and real-time data aggregation to scan multiple blockchain networks, crypto exchanges, and news sources. This ensures you're always up-to-date with the latest blockchain innovations and opportunities." },
+        { q: "Is this app suitable for beginners in the blockchain space?", a: "Absolutely! Our app is designed with both novices and experts in mind. We provide user-friendly interfaces and educational resources to help beginners understand and navigate the blockchain ecosystem." },
+        { q: "Can I customize the type of blockchain information I receive?", a: "Yes, you can tailor your experience by setting preferences for specific blockchain networks, project types, or investment criteria. This ensures you only see the most relevant information for your interests." },
+        { q: "How often is the blockchain information updated?", a: "Our app continuously updates in real-time, ensuring you have access to the most current blockchain data, market trends, and project launches as soon as they become available." }
       ]
     }
   },
